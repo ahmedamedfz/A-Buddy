@@ -26,23 +26,24 @@ struct ContentView: View {
             VStack(alignment: .leading){
                 Text("Friends List")
                 HStack{
-                    Image("profile_fayfay").resizable().frame(width: 75, height: 75)
+                    Image("profile_fayfay").resizable().frame(width: 55, height: 55)
                         .clipShape(Circle())
                         .overlay{
                             Circle().stroke(.gray, lineWidth: 1)
                         }
                     HStack(){
                         VStack{
-                            Text("Nickname")
-                            Text("Fullname")
+                            Text("Nickname").foregroundColor(.white).bold().font(.system(size: 16, design: .rounded))
+                        
+                            Text("Scan").foregroundColor(Color(red: 49/255, green: 175/255, blue: 171/255)).font(.system(size: 12, design: .rounded)).background(.white).cornerRadius(15).shadow(color: Color(red: 220/255, green: 220/255, blue: 220/255), radius: 10,x: 3, y: 0).frame()
                         }
                         VStack{
-                                Text("Phone Number")
-                                Text("Birthdate")
+                            Image("lock").resizable().frame(width: 28, height: 34).padding(EdgeInsets(top: 4, leading: 0, bottom: -4, trailing: 0))
+                                Text("Unknown").foregroundColor(Color(red: 49/255, green: 175/255, blue: 171/255)).font(.system(size: 14, design: .rounded))
                         }.frame(maxWidth: 100, maxHeight: 100)
                             .background(Color(red: 254/255, green: 219/255, blue: 165/255))
                     }
-                }.background(Color(red: 255/255, green: 143/255, blue: 145/255)).cornerRadius(10)
+                }.background(Color(red: 255/255, green: 143/255, blue: 145/255)).cornerRadius(15)
                     .shadow(color: Color(red: 220/255, green: 220/255, blue: 220/255), radius: 10,x: 3, y: 0)
             }
             
@@ -53,19 +54,22 @@ struct ContentView: View {
                         .clipShape(Circle())
                         .overlay{
                             Circle().stroke(.gray, lineWidth: 1)
-                        }
-                    HStack(){
-                        VStack{
+                        }.offset(x:20, y: 0)
+                    HStack{
+                        VStack(alignment: .leading){
                             Text("Nickname").foregroundColor(.white).bold().font(.system(size: 16, design: .rounded))
                             Text("Fullname").foregroundColor(.white).font(.system(size: 14, design: .rounded))
-                        }
-                        VStack{
-                                Text("Phone Number").foregroundColor(Color(red: 49/255, green: 175/255, blue: 171/255)).font(.system(size: 14, design: .rounded))
+                        }.frame(width: 140, height: 100)
+                        VStack(alignment: .leading){
+                            Text("Phone Number").foregroundColor(Color(red: 49/255, green: 175/255, blue: 171/255)).font(.system(size: 14, design: .rounded)).padding(EdgeInsets(top: 0, leading: 0, bottom: -10, trailing: 0))
+                            HStack{
+                                Image("birthday").resizable().frame(width: 28, height: 30).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: -5))
                                 Text("Birthdate").foregroundColor(Color(red: 49/255, green: 175/255, blue: 171/255)).font(.system(size: 14, design: .rounded))
-                        }.frame(maxWidth: 100, maxHeight: 100)
+                            }
+                        }.frame(width: 150, height: 100)
                             .background(Color.white)
                     }
-                }.background(Color(red: 49/255, green: 175/255, blue: 171/255)).cornerRadius(10)
+                }.background(Color(red: 49/255, green: 175/255, blue: 171/255)).cornerRadius(15)
                     .shadow(color: Color(red: 220/255, green: 220/255, blue: 220/255), radius: 10,x: 3, y: 0)
             }
             
