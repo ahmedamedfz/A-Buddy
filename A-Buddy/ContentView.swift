@@ -34,12 +34,12 @@ struct ContentView: View {
                     HStack(){
                         VStack{
                             Text("Nickname").foregroundColor(.white).bold().font(.system(size: 16, design: .rounded))
-                        
+                            
                             Text("Scan").foregroundColor(Color(red: 49/255, green: 175/255, blue: 171/255)).font(.system(size: 12, design: .rounded)).background(.white).cornerRadius(15).shadow(color: Color(red: 220/255, green: 220/255, blue: 220/255), radius: 10,x: 3, y: 0)
                         }.frame(width: 140, height: 100)
                         VStack{
                             Image("lock").resizable().frame(width: 28, height: 34).padding(EdgeInsets(top: 4, leading: 0, bottom: -4, trailing: 0))
-                                Text("Unknown").foregroundColor(Color(red: 49/255, green: 175/255, blue: 171/255)).font(.system(size: 14, design: .rounded))
+                            Text("Unknown").foregroundColor(Color(red: 49/255, green: 175/255, blue: 171/255)).font(.system(size: 14, design: .rounded))
                         }.frame(width: 150, height: 100)
                             .background(Color(red: 254/255, green: 219/255, blue: 165/255))
                     }
