@@ -13,6 +13,7 @@
 		490F33D329C83FC000B99CDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 490F33D229C83FC000B99CDA /* Preview Assets.xcassets */; };
 		490F33D529C83FC000B99CDA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490F33D429C83FC000B99CDA /* Persistence.swift */; };
 		490F33D829C83FC000B99CDA /* A_Buddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 490F33D629C83FC000B99CDA /* A_Buddy.xcdatamodeld */; };
+		9B1CCDC929CB703C00C1CAD5 /* OnBoardingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1CCDC829CB703C00C1CAD5 /* OnBoardingForm.swift */; };
 		9B37FC4F29C9C7A6008BDF71 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37FC4E29C9C7A6008BDF71 /* Index.swift */; };
 		9B57F75C29CA1E940098067A /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B57F75B29CA1E940098067A /* OnBoarding.swift */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,7 @@
 		490F33D229C83FC000B99CDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		490F33D429C83FC000B99CDA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		490F33D729C83FC000B99CDA /* A_Buddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = A_Buddy.xcdatamodel; sourceTree = "<group>"; };
+		9B1CCDC829CB703C00C1CAD5 /* OnBoardingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingForm.swift; sourceTree = "<group>"; };
 		9B37FC4E29C9C7A6008BDF71 /* Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
 		9B57F75B29CA1E940098067A /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +64,7 @@
 				490F33CB29C83FBF00B99CDA /* A_BuddyApp.swift */,
 				490F33CD29C83FBF00B99CDA /* ContentView.swift */,
 				9B37FC4E29C9C7A6008BDF71 /* Index.swift */,
+				9B1CCDC829CB703C00C1CAD5 /* OnBoardingForm.swift */,
 				9B57F75B29CA1E940098067A /* OnBoarding.swift */,
 				490F33CF29C83FC000B99CDA /* Assets.xcassets */,
 				490F33D429C83FC000B99CDA /* Persistence.swift */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				490F33D829C83FC000B99CDA /* A_Buddy.xcdatamodeld in Sources */,
+				9B1CCDC929CB703C00C1CAD5 /* OnBoardingForm.swift in Sources */,
 				490F33D529C83FC000B99CDA /* Persistence.swift in Sources */,
 				490F33CE29C83FBF00B99CDA /* ContentView.swift in Sources */,
 				490F33CC29C83FBF00B99CDA /* A_BuddyApp.swift in Sources */,

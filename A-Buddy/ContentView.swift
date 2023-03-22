@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack(){
-            Image("Header").resizable().frame(width: 389,height: 693).ignoresSafeArea()
+            Image("Header").resizable().frame(width: 389,height: 693).offset(y:-100)
             VStack{
                 VStack(alignment: .leading){
                     Divider()
@@ -50,9 +50,13 @@ struct ContentView: View {
                 Spacer()
             }.frame(width: 390, height: 680).background(.white).cornerRadius(42).offset(y: 164)
             HStack{
-                Image("ProfilePicture").resizable().frame(width: 92, height: 92)
-                    .clipShape(Circle())
-                    .shadow(color: Color(red: 220/255, green: 220/255, blue: 220/255), radius: 10,x: 0, y: 3).offset(x:0, y:5)
+                Button{
+                    print("text")
+                }label: {
+                    Image("ProfilePicture").resizable().frame(width: 92, height: 92)
+                        .clipShape(Circle())
+                        .shadow(color: Color(red: 220/255, green: 220/255, blue: 220/255), radius: 10,x: 0, y: 3).offset(x:0, y:5)
+                }
                 Text("Nickname").font(.system(size: 22, design: .rounded)).bold().offset(x:10, y:20)
             }.offset(x:-50, y: -170)
         }
