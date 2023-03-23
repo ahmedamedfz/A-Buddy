@@ -48,7 +48,7 @@ struct ContentView: View {
                     Divider()
                 }.padding(EdgeInsets(top: 100, leading: 0, bottom: 0, trailing: 0))
                 Spacer()
-            }.frame(width: 390, height: 680).background(.white).cornerRadius(42).offset(y: 164)
+            }.frame(width: 390, height: 680).background(.white).cornerRadius(42).offset(y: 144)
             HStack{
                 Button{
                     print("text")
@@ -58,7 +58,7 @@ struct ContentView: View {
                         .shadow(color: Color(red: 220/255, green: 220/255, blue: 220/255), radius: 10,x: 0, y: 3).offset(x:0, y:5)
                 }
                 Text("Nickname").font(.system(size: 22, design: .rounded)).bold().offset(x:10, y:20)
-            }.offset(x:-50, y: -170)
+            }.offset(x:-50, y: -195)
         }
     }
 }
