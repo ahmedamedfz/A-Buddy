@@ -9,8 +9,8 @@ import SwiftUI
 
 struct OnBoardingForm: View {
     @State private var test = ""
-    @State private var selection = "Select name"
-    let tests = ["Select", "Yovita Handayiani", "me", "mine", "you", "your", "yours", "our", "ours"]
+    @State private var selection = 0
+    var tests = ["Select Name", "Yovita Handayiani", "me", "mine", "you", "your", "yours", "our", "ours"]
     
     var body: some View {
         VStack{
@@ -18,15 +18,15 @@ struct OnBoardingForm: View {
                 
                 ZStack{
                     
-                    Form{
+                    Form(){
                         Section(header:  Image("FormHeader").resizable().frame(width: 166, height: 29).padding(EdgeInsets(top: 10, leading: 0, bottom: 5, trailing: 0))){
                             Text("Who are you on this list?").font(.system(size: 17, design: .rounded)).listRowSeparator(.hidden)
 
-                            Picker("Select name", selection: $selection){
-                                ForEach(tests, id: \.self){
-                                    Text($0)
+                            Picker(selection: $selection, label: EmptyView()){
+                                ForEach(0..<tests.count) {
+                                    Text(self.tests[$0])
                                 }
-                            }.font(.system(size: 17, design: .rounded)).foregroundColor(Color(red: 49/255, green: 175/255, blue: 171/255)).overlay(VStack{Divider()
+                            }.pickerStyle(.menu).tint(Color(red: 49/255, green: 175/255, blue: 171/255)).font(.system(size: 17, design: .rounded)).overlay(VStack{Divider()
                                     .frame(width: 303,height: 1)
                                 .background(Color(red: 49/255, green: 175/255, blue: 171/255)).offset(x: 7, y: 15)})
                             Text("What should we call you?").font(.system(size: 17, design: .rounded)).listRowSeparator(.hidden)
