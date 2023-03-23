@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack(){
-            Image("Header").resizable().frame(width: 389,height: 693).offset(y:-100)
+            Image("Header").resizable().frame(width: 399,height: 693).offset(y:-100)
             VStack{
                 VStack(alignment: .leading){
                     Divider()
@@ -48,7 +48,7 @@ struct ContentView: View {
                     Divider()
                 }.padding(EdgeInsets(top: 100, leading: 0, bottom: 0, trailing: 0))
                 Spacer()
-            }.frame(width: 390, height: 680).background(.white).cornerRadius(42).offset(y: 144)
+            }.frame(width: 395, height: 680).background(.white).cornerRadius(42).offset(y: 144)
             HStack{
                 Button{
                     print("text")

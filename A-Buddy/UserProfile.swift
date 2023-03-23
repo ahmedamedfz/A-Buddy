@@ -12,7 +12,7 @@ struct UserProfile: View {
     
     var body: some View {
         ZStack(){
-            Image("Header").resizable().frame(width: 389,height: 693).offset(y:-100)
+            Image("Header").resizable().frame(width: 399,height: 693).offset(y:-100)
             Button{}label: {
                 Image("BackButton").resizable().frame(width: 40, height: 40).offset(x:-140,y:-360)
             }
@@ -20,28 +20,31 @@ struct UserProfile: View {
                 VStack(alignment: .leading){
                     Form{
                         HStack{
-                            Text("Full Name").font(.system(size: 17, design: .rounded)).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 5))
+                            Text("Full Name").font(.system(size: 17, design: .rounded)).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 30))
                             TextField(text: $test, prompt: Text("Required")){
                             
                             }
-                        }
+                        }.listRowSeparator(.hidden).overlay(VStack{Divider()
+                                .frame(width: 1000,height: 1).offset(x: 7, y: 18)})
                         HStack{
-                            Text("Birthday").font(.system(size: 17, design: .rounded)).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 16))
+                            Text("Birthday").font(.system(size: 17, design: .rounded)).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 41))
                             TextField(text: $test, prompt: Text("Required")){
                                 Text("Nickname")
                             }
-                        }
+                        }.listRowSeparator(.hidden).overlay(VStack{Divider()
+                            .frame(width: 1000,height: 1).offset(x: 7, y: 18)})
                         HStack{
-                            Text("WhatsApp").font(.system(size: 17, design: .rounded))
+                            Text("WhatsApp").font(.system(size: 17, design: .rounded)).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 25))
                             TextField(text: $test, prompt: Text("Required")){
                                 Text("Nickname")
                             }
-                        }
-                    }.padding(EdgeInsets(top: 100, leading: 0, bottom: 0, trailing: 0))
+                        }.listRowSeparator(.hidden).overlay(VStack{Divider()
+                            .frame(width: 1000,height: 1).offset(x: 7, y: 18)})
+                    }.scrollContentBackground(.hidden).padding(EdgeInsets(top: 100, leading: 0, bottom: 0, trailing: 0))
                     Text("My QR").font(.system(size: 17, design: .rounded)).bold().offset(x:170, y: -350)
                     //QR
                     Spacer()
-                }.frame(width: 390, height: 680).background(.white).cornerRadius(42).offset(y: 224)
+                }.frame(width: 395, height: 680).background(.white).cornerRadius(42).offset(y: 224)
                 VStack{
                     Image("ProfilePicture").resizable().frame(width: 120, height: 120)
                         .clipShape(Circle())
