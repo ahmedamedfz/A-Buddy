@@ -13,15 +13,38 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-        }
+
+        if let listFile = try? String(contentsOfFile: "/Users/ahmadfariz/Documents/Xcode/NC1/A-Buddy/A-Buddy/dataBuddy.csv") {
+                        let lines = listFile.components(separatedBy: "\n")
+                        // NOTE: There is also a CSV format that uses ',' as a separator
+                        // So verify if yours uses ';' or ','
+                        let rows: [[String: String]] = lines.compactMap() {
+                            (item) -> [String: String]? in
+                            let components = item.components(separatedBy: ";")
+                            if components.count != 2 {
+                                return nil
+                            }
+                            let name = components[0]
+                            let id = components[1]
+                            let nickname = name.components(separatedBy: " ").first ?? ""
+                            let dict = [
+                                "id":    id,
+                                "name": name,
+                                "nickBuddy" : nickname
+                            ]
+                            return dict
+                        }
+                    for row in rows {
+                        let newEntity = Buddy(context: viewContext)
+                            newEntity.buddyId = row["id"]
+                            newEntity.buddyName = row["name"]
+                            newEntity.buddyNick = row["nickBuddy"]
+                    // set other properties as needed
+                }
+                    }
         do {
             try viewContext.save()
         } catch {
-            // Replace this implementation with code to handle the error appropriately.
-            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
             let nsError = error as NSError
             fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
         }
@@ -37,17 +60,6 @@ struct PersistenceController {
         }
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-
-                /*
-                 Typical reasons for an error here include:
-                 * The parent directory does not exist, cannot be created, or disallows writing.
-                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                 * The device is out of space.
-                 * The store could not be migrated to the current model version.
-                 Check the error message to determine what the actual problem was.
-                 */
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
