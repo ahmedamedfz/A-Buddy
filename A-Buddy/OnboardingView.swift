@@ -31,7 +31,7 @@ struct OnBoardingForm: View {
                                         .listRowSeparator(.hidden)
                                     Picker(selection: $selectedUser, label: EmptyView()) {
                                             ForEach(buddy, id: \.self) { buddy in
-                                            Text(buddy.buddyName ?? "Unknown")
+                                                Text(self.buddy.buddyName!)
                                             }
                                 }
                                 .font(.system(size: 17, design: .rounded))
