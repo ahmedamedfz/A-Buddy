@@ -15,13 +15,21 @@
 		490F33D829C83FC000B99CDA /* A_Buddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 490F33D629C83FC000B99CDA /* A_Buddy.xcdatamodeld */; };
 		492D2CF029C9640900CA9CB7 /* dataBuddy.csv in Resources */ = {isa = PBXBuildFile; fileRef = 492D2CEF29C9640900CA9CB7 /* dataBuddy.csv */; };
 		492D2CFC29C9717100CA9CB7 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D2CFB29C9717100CA9CB7 /* PhotoManager.swift */; };
-		492D2CFE29C99ADC00CA9CB7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D2CFD29C99ADC00CA9CB7 /* ProfileView.swift */; };
 		492D2D0029CC0F9800CA9CB7 /* EntityPreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D2CFF29CC0F9800CA9CB7 /* EntityPreView.swift */; };
 		492D2D0229CC1A8000CA9CB7 /* PersonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D2D0129CC1A8000CA9CB7 /* PersonalView.swift */; };
 		492D2D0429CC220E00CA9CB7 /* BuddyPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D2D0329CC220E00CA9CB7 /* BuddyPreview.swift */; };
+		494D8F7C29CDAB5C00AF9603 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494D8F7B29CDAB5C00AF9603 /* SwiftUIView.swift */; };
+		494D8F8329CDFE2700AF9603 /* BuddyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494D8F8229CDFE2700AF9603 /* BuddyManager.swift */; };
+		494D8F8529CE036400AF9603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494D8F8429CE036400AF9603 /* AppDelegate.swift */; };
+		494D8FAB29CECC6700AF9603 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494D8FAA29CECC6700AF9603 /* UserDefaultManager.swift */; };
+		494D8FB129CEDE5000AF9603 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494D8FB029CEDE5000AF9603 /* UserDefaultsManager.swift */; };
+		494D8FBF29CF4F6100AF9603 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 494D8FBE29CF4F6100AF9603 /* CodeScanner */; };
+		494D8FC129CF4FAA00AF9603 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494D8FC029CF4FAA00AF9603 /* ScannerView.swift */; };
+		494D8FC329CF52FE00AF9603 /* MyQRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494D8FC229CF52FE00AF9603 /* MyQRGenerator.swift */; };
+		494D8FC529CF550600AF9603 /* EntityDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494D8FC429CF550600AF9603 /* EntityDetail.swift */; };
+		494D8FC729D00EEE00AF9603 /* MyQRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494D8FC629D00EEE00AF9603 /* MyQRScanner.swift */; };
 		49B5967929CC340500F1FF4C /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5967829CC340500F1FF4C /* CustomNavBar.swift */; };
 		49B5967D29CC526200F1FF4C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5967C29CC526200F1FF4C /* OnboardingView.swift */; };
-		49B5967F29CC546900F1FF4C /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5967E29CC546900F1FF4C /* UserView.swift */; };
 		49B596CD29CD5D2600F1FF4C /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B596CC29CD5D2600F1FF4C /* PopupViewController.swift */; };
 		49B596CF29CD5FF500F1FF4C /* PopupForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B596CE29CD5FF500F1FF4C /* PopupForm.swift */; };
 /* End PBXBuildFile section */
@@ -36,13 +44,21 @@
 		490F33D729C83FC000B99CDA /* A_Buddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = A_Buddy.xcdatamodel; sourceTree = "<group>"; };
 		492D2CEF29C9640900CA9CB7 /* dataBuddy.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dataBuddy.csv; sourceTree = "<group>"; };
 		492D2CFB29C9717100CA9CB7 /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
-		492D2CFD29C99ADC00CA9CB7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		492D2CFF29CC0F9800CA9CB7 /* EntityPreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityPreView.swift; sourceTree = "<group>"; };
 		492D2D0129CC1A8000CA9CB7 /* PersonalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalView.swift; sourceTree = "<group>"; };
 		492D2D0329CC220E00CA9CB7 /* BuddyPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyPreview.swift; sourceTree = "<group>"; };
+		494D8F7B29CDAB5C00AF9603 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		494D8F8229CDFE2700AF9603 /* BuddyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyManager.swift; sourceTree = "<group>"; };
+		494D8F8429CE036400AF9603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		494D8FAA29CECC6700AF9603 /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		494D8FB029CEDE5000AF9603 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		494D8FC029CF4FAA00AF9603 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		494D8FC229CF52FE00AF9603 /* MyQRGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQRGenerator.swift; sourceTree = "<group>"; };
+		494D8FC429CF550600AF9603 /* EntityDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityDetail.swift; sourceTree = "<group>"; };
+		494D8FC629D00EEE00AF9603 /* MyQRScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQRScanner.swift; sourceTree = "<group>"; };
+		494D8FC829D010AD00AF9603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		49B5967829CC340500F1FF4C /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
 		49B5967C29CC526200F1FF4C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		49B5967E29CC546900F1FF4C /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		49B596CC29CD5D2600F1FF4C /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		49B596CE29CD5FF500F1FF4C /* PopupForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494D8FBF29CF4F6100AF9603 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,22 +94,21 @@
 		490F33CA29C83FBF00B99CDA /* A-Buddy */ = {
 			isa = PBXGroup;
 			children = (
-				49B5967E29CC546900F1FF4C /* UserView.swift */,
-				492D2D0329CC220E00CA9CB7 /* BuddyPreview.swift */,
+				494D8FC829D010AD00AF9603 /* Info.plist */,
+				494D8FBC29CF4CA100AF9603 /* UnUsed */,
 				492D2CEF29C9640900CA9CB7 /* dataBuddy.csv */,
-				49B596CE29CD5FF500F1FF4C /* PopupForm.swift */,
+				494D8F8229CDFE2700AF9603 /* BuddyManager.swift */,
+				494D8FC229CF52FE00AF9603 /* MyQRGenerator.swift */,
+				494D8FC429CF550600AF9603 /* EntityDetail.swift */,
 				490F33CB29C83FBF00B99CDA /* A_BuddyApp.swift */,
+				494D8FC629D00EEE00AF9603 /* MyQRScanner.swift */,
 				492D2CFF29CC0F9800CA9CB7 /* EntityPreView.swift */,
 				492D2D0129CC1A8000CA9CB7 /* PersonalView.swift */,
 				490F33CD29C83FBF00B99CDA /* ContentView.swift */,
 				49B5967C29CC526200F1FF4C /* OnboardingView.swift */,
-				49B5967829CC340500F1FF4C /* CustomNavBar.swift */,
 				490F33CF29C83FC000B99CDA /* Assets.xcassets */,
-				49B596CC29CD5D2600F1FF4C /* PopupViewController.swift */,
 				490F33D429C83FC000B99CDA /* Persistence.swift */,
 				490F33D629C83FC000B99CDA /* A_Buddy.xcdatamodeld */,
-				492D2CFB29C9717100CA9CB7 /* PhotoManager.swift */,
-				492D2CFD29C99ADC00CA9CB7 /* ProfileView.swift */,
 				490F33D129C83FC000B99CDA /* Preview Content */,
 			);
 			path = "A-Buddy";
@@ -104,6 +120,23 @@
 				490F33D229C83FC000B99CDA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		494D8FBC29CF4CA100AF9603 /* UnUsed */ = {
+			isa = PBXGroup;
+			children = (
+				494D8F8429CE036400AF9603 /* AppDelegate.swift */,
+				49B596CE29CD5FF500F1FF4C /* PopupForm.swift */,
+				49B596CC29CD5D2600F1FF4C /* PopupViewController.swift */,
+				494D8F7B29CDAB5C00AF9603 /* SwiftUIView.swift */,
+				49B5967829CC340500F1FF4C /* CustomNavBar.swift */,
+				492D2CFB29C9717100CA9CB7 /* PhotoManager.swift */,
+				494D8FAA29CECC6700AF9603 /* UserDefaultManager.swift */,
+				494D8FB029CEDE5000AF9603 /* UserDefaultsManager.swift */,
+				492D2D0329CC220E00CA9CB7 /* BuddyPreview.swift */,
+				494D8FC029CF4FAA00AF9603 /* ScannerView.swift */,
+			);
+			path = UnUsed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +155,9 @@
 			dependencies = (
 			);
 			name = "A-Buddy";
+			packageProductDependencies = (
+				494D8FBE29CF4F6100AF9603 /* CodeScanner */,
+			);
 			productName = "A-Buddy";
 			productReference = 490F33C829C83FBF00B99CDA /* A-Buddy.app */;
 			productType = "com.apple.product-type.application";
@@ -150,6 +186,9 @@
 				Base,
 			);
 			mainGroup = 490F33BF29C83FBF00B99CDA;
+			packageReferences = (
+				494D8FBD29CF4F6100AF9603 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 490F33C929C83FBF00B99CDA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -179,18 +218,25 @@
 			files = (
 				490F33D829C83FC000B99CDA /* A_Buddy.xcdatamodeld in Sources */,
 				490F33D529C83FC000B99CDA /* Persistence.swift in Sources */,
+				494D8FAB29CECC6700AF9603 /* UserDefaultManager.swift in Sources */,
 				490F33CE29C83FBF00B99CDA /* ContentView.swift in Sources */,
+				494D8FB129CEDE5000AF9603 /* UserDefaultsManager.swift in Sources */,
+				494D8FC529CF550600AF9603 /* EntityDetail.swift in Sources */,
+				494D8F8329CDFE2700AF9603 /* BuddyManager.swift in Sources */,
 				492D2CFC29C9717100CA9CB7 /* PhotoManager.swift in Sources */,
 				49B5967929CC340500F1FF4C /* CustomNavBar.swift in Sources */,
 				492D2D0229CC1A8000CA9CB7 /* PersonalView.swift in Sources */,
-				492D2CFE29C99ADC00CA9CB7 /* ProfileView.swift in Sources */,
-				49B5967F29CC546900F1FF4C /* UserView.swift in Sources */,
+				494D8FC129CF4FAA00AF9603 /* ScannerView.swift in Sources */,
+				494D8F8529CE036400AF9603 /* AppDelegate.swift in Sources */,
 				490F33CC29C83FBF00B99CDA /* A_BuddyApp.swift in Sources */,
 				492D2D0429CC220E00CA9CB7 /* BuddyPreview.swift in Sources */,
+				494D8FC729D00EEE00AF9603 /* MyQRScanner.swift in Sources */,
+				494D8FC329CF52FE00AF9603 /* MyQRGenerator.swift in Sources */,
 				49B596CF29CD5FF500F1FF4C /* PopupForm.swift in Sources */,
 				492D2D0029CC0F9800CA9CB7 /* EntityPreView.swift in Sources */,
 				49B5967D29CC526200F1FF4C /* OnboardingView.swift in Sources */,
 				49B596CD29CD5D2600F1FF4C /* PopupViewController.swift in Sources */,
+				494D8F7C29CDAB5C00AF9603 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +368,8 @@
 				DEVELOPMENT_TEAM = C5V5PAM88P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "A-Buddy/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -351,6 +399,8 @@
 				DEVELOPMENT_TEAM = C5V5PAM88P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "A-Buddy/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -391,6 +441,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		494D8FBD29CF4F6100AF9603 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		494D8FBE29CF4F6100AF9603 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 494D8FBD29CF4F6100AF9603 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		490F33D629C83FC000B99CDA /* A_Buddy.xcdatamodeld */ = {

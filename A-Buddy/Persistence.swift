@@ -36,9 +36,11 @@ struct PersistenceController {
                         }
                     for row in rows {
                         let newEntity = Buddy(context: viewContext)
-                            newEntity.buddyId = row["id"]
                             newEntity.buddyName = row["name"]
                             newEntity.buddyNick = row["nickBuddy"]
+                            newEntity.id = UUID()
+                            newEntity.itsMe = false
+                        newEntity.isScanned = false
                     // set other properties as needed
                 }
                     }

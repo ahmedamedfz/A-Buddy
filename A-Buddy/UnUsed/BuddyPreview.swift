@@ -33,7 +33,7 @@ struct BuddyPreview {
                         Text(buddy.buddyNick ?? "nickname").font(.system(size: 17, design: .rounded)).bold().foregroundColor(Color(red: 49/255, green: 175/255, blue: 171/255)).padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
                         HStack{
                             Image("PhoneNumber").resizable().frame(width: 18, height: 22).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 5))
-                            Text("\(buddy.buddyPhoneNumber)").font(.system(size: 16, design: .rounded)).bold().foregroundColor(Color(red: 49/255, green: 175/255, blue: 171/255)).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 65))
+                            Text(buddy.buddyPhoneNumber ?? "").font(.system(size: 16, design: .rounded)).bold().foregroundColor(Color(red: 49/255, green: 175/255, blue: 171/255)).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 65))
                             Image("Birthdate").resizable().frame(width: 22, height: 19).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 5))
                             Text("\(buddy.buddyBirthday ?? Date())").font(.system(size: 16, design: .rounded)).bold().foregroundColor(Color(red: 49/255, green: 175/255, blue: 171/255))
                             

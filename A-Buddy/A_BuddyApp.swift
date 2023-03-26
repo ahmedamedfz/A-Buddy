@@ -9,12 +9,15 @@ import SwiftUI
 
 @main
 struct A_BuddyApp: App {
+    
     let persistenceController = PersistenceController.shared
-
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+//            ContentView()
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+//            ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+            OnBoardingForm().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
         }
     }
 }

@@ -3,4 +3,69 @@
    uuid = "5F02A0DB-0CEA-41FE-B9B2-566899D3542E"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56C7B00B-EEF3-404F-9267-6351C34E6CAB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "A-Buddy/Persistence.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "preview"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "56C7B00B-EEF3-404F-9267-6351C34E6CAB - 6181877e5276bbeb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "one-time initialization function for preview"
+                  moduleName = "A-Buddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmadfariz/Documents/Xcode/NC1/A-Buddy/A-Buddy/Persistence.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "56C7B00B-EEF3-404F-9267-6351C34E6CAB - 44baac73a22a0022"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; A_Buddy.PersistenceController in variable initialization expression of static A_Buddy.PersistenceController.preview : A_Buddy.PersistenceController"
+                  moduleName = "A-Buddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmadfariz/Documents/Xcode/NC1/A-Buddy/A-Buddy/Persistence.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "56C7B00B-EEF3-404F-9267-6351C34E6CAB - 6a38361db46a308f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "A_Buddy.PersistenceController.preview.unsafeMutableAddressor : A_Buddy.PersistenceController"
+                  moduleName = "A-Buddy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ahmadfariz/Documents/Xcode/NC1/A-Buddy/A-Buddy/Persistence.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
