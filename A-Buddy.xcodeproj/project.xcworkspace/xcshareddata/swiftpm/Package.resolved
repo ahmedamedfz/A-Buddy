@@ -8,6 +8,15 @@
         "revision" : "d8f10d992ef32a4187b78a6df320facf75d631d8",
         "version" : "2.3.1"
       }
+    },
+    {
+      "identity" : "image-picker-module",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftui-packages/image-picker-module.git",
+      "state" : {
+        "revision" : "5c4e813e86d8dec2977693f4f4a4f84427ba7f9a",
+        "version" : "1.0.7"
+      }
     }
   ],
   "version" : 2

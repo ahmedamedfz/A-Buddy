@@ -7,35 +7,20 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "56C7B00B-EEF3-404F-9267-6351C34E6CAB"
+            uuid = "FC6FDE14-104A-4695-B0A9-8789D322D289"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "A-Buddy/Persistence.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "preview"
-            landmarkType = "24">
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "PersistenceController"
+            landmarkType = "14">
             <Locations>
                <Location
-                  uuid = "56C7B00B-EEF3-404F-9267-6351C34E6CAB - 6181877e5276bbeb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "one-time initialization function for preview"
-                  moduleName = "A-Buddy"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ahmadfariz/Documents/Xcode/NC1/A-Buddy/A-Buddy/Persistence.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "8">
-               </Location>
-               <Location
-                  uuid = "56C7B00B-EEF3-404F-9267-6351C34E6CAB - 44baac73a22a0022"
+                  uuid = "FC6FDE14-104A-4695-B0A9-8789D322D289 - 44baac73a22a0041"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -45,26 +30,42 @@
                   urlString = "file:///Users/ahmadfariz/Documents/Xcode/NC1/A-Buddy/A-Buddy/Persistence.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "184">
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "264">
                </Location>
                <Location
-                  uuid = "56C7B00B-EEF3-404F-9267-6351C34E6CAB - 6a38361db46a308f"
+                  uuid = "FC6FDE14-104A-4695-B0A9-8789D322D289 - 44baac73a22a0041"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "A_Buddy.PersistenceController.preview.unsafeMutableAddressor : A_Buddy.PersistenceController"
+                  symbolName = "closure #1 () -&gt; A_Buddy.PersistenceController in variable initialization expression of static A_Buddy.PersistenceController.preview : A_Buddy.PersistenceController"
                   moduleName = "A-Buddy"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ahmadfariz/Documents/Xcode/NC1/A-Buddy/A-Buddy/Persistence.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "16">
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "500">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDFDF510-ABD6-4A09-971A-12142411A627"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "A-Buddy/MyQRScanner.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

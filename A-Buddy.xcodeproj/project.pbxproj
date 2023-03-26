@@ -13,7 +13,6 @@
 		490F33D329C83FC000B99CDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 490F33D229C83FC000B99CDA /* Preview Assets.xcassets */; };
 		490F33D529C83FC000B99CDA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490F33D429C83FC000B99CDA /* Persistence.swift */; };
 		490F33D829C83FC000B99CDA /* A_Buddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 490F33D629C83FC000B99CDA /* A_Buddy.xcdatamodeld */; };
-		492D2CF029C9640900CA9CB7 /* dataBuddy.csv in Resources */ = {isa = PBXBuildFile; fileRef = 492D2CEF29C9640900CA9CB7 /* dataBuddy.csv */; };
 		492D2CFC29C9717100CA9CB7 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D2CFB29C9717100CA9CB7 /* PhotoManager.swift */; };
 		492D2D0029CC0F9800CA9CB7 /* EntityPreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D2CFF29CC0F9800CA9CB7 /* EntityPreView.swift */; };
 		492D2D0229CC1A8000CA9CB7 /* PersonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D2D0129CC1A8000CA9CB7 /* PersonalView.swift */; };
@@ -28,6 +27,9 @@
 		494D8FC329CF52FE00AF9603 /* MyQRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494D8FC229CF52FE00AF9603 /* MyQRGenerator.swift */; };
 		494D8FC529CF550600AF9603 /* EntityDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494D8FC429CF550600AF9603 /* EntityDetail.swift */; };
 		494D8FC729D00EEE00AF9603 /* MyQRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494D8FC629D00EEE00AF9603 /* MyQRScanner.swift */; };
+		494D8FCA29D0531600AF9603 /* DataBuddy.csv in Resources */ = {isa = PBXBuildFile; fileRef = 494D8FC929D0531600AF9603 /* DataBuddy.csv */; };
+		494D8FCD29D0B78700AF9603 /* ImagePickerModule in Frameworks */ = {isa = PBXBuildFile; productRef = 494D8FCC29D0B78700AF9603 /* ImagePickerModule */; };
+		494D8FCF29D0B7C000AF9603 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494D8FCE29D0B7C000AF9603 /* ImagePickerView.swift */; };
 		49B5967929CC340500F1FF4C /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5967829CC340500F1FF4C /* CustomNavBar.swift */; };
 		49B5967D29CC526200F1FF4C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5967C29CC526200F1FF4C /* OnboardingView.swift */; };
 		49B596CD29CD5D2600F1FF4C /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B596CC29CD5D2600F1FF4C /* PopupViewController.swift */; };
@@ -42,7 +44,6 @@
 		490F33D229C83FC000B99CDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		490F33D429C83FC000B99CDA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		490F33D729C83FC000B99CDA /* A_Buddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = A_Buddy.xcdatamodel; sourceTree = "<group>"; };
-		492D2CEF29C9640900CA9CB7 /* dataBuddy.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dataBuddy.csv; sourceTree = "<group>"; };
 		492D2CFB29C9717100CA9CB7 /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
 		492D2CFF29CC0F9800CA9CB7 /* EntityPreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityPreView.swift; sourceTree = "<group>"; };
 		492D2D0129CC1A8000CA9CB7 /* PersonalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalView.swift; sourceTree = "<group>"; };
@@ -57,6 +58,8 @@
 		494D8FC429CF550600AF9603 /* EntityDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityDetail.swift; sourceTree = "<group>"; };
 		494D8FC629D00EEE00AF9603 /* MyQRScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQRScanner.swift; sourceTree = "<group>"; };
 		494D8FC829D010AD00AF9603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		494D8FC929D0531600AF9603 /* DataBuddy.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DataBuddy.csv; sourceTree = "<group>"; };
+		494D8FCE29D0B7C000AF9603 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		49B5967829CC340500F1FF4C /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
 		49B5967C29CC526200F1FF4C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		49B596CC29CD5D2600F1FF4C /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494D8FCD29D0B78700AF9603 /* ImagePickerModule in Frameworks */,
 				494D8FBF29CF4F6100AF9603 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +82,7 @@
 		490F33BF29C83FBF00B99CDA = {
 			isa = PBXGroup;
 			children = (
+				494D8FC929D0531600AF9603 /* DataBuddy.csv */,
 				490F33CA29C83FBF00B99CDA /* A-Buddy */,
 				490F33C929C83FBF00B99CDA /* Products */,
 			);
@@ -96,7 +101,6 @@
 			children = (
 				494D8FC829D010AD00AF9603 /* Info.plist */,
 				494D8FBC29CF4CA100AF9603 /* UnUsed */,
-				492D2CEF29C9640900CA9CB7 /* dataBuddy.csv */,
 				494D8F8229CDFE2700AF9603 /* BuddyManager.swift */,
 				494D8FC229CF52FE00AF9603 /* MyQRGenerator.swift */,
 				494D8FC429CF550600AF9603 /* EntityDetail.swift */,
@@ -109,6 +113,7 @@
 				490F33CF29C83FC000B99CDA /* Assets.xcassets */,
 				490F33D429C83FC000B99CDA /* Persistence.swift */,
 				490F33D629C83FC000B99CDA /* A_Buddy.xcdatamodeld */,
+				494D8FCE29D0B7C000AF9603 /* ImagePickerView.swift */,
 				490F33D129C83FC000B99CDA /* Preview Content */,
 			);
 			path = "A-Buddy";
@@ -157,6 +162,7 @@
 			name = "A-Buddy";
 			packageProductDependencies = (
 				494D8FBE29CF4F6100AF9603 /* CodeScanner */,
+				494D8FCC29D0B78700AF9603 /* ImagePickerModule */,
 			);
 			productName = "A-Buddy";
 			productReference = 490F33C829C83FBF00B99CDA /* A-Buddy.app */;
@@ -188,6 +194,7 @@
 			mainGroup = 490F33BF29C83FBF00B99CDA;
 			packageReferences = (
 				494D8FBD29CF4F6100AF9603 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				494D8FCB29D0B78700AF9603 /* XCRemoteSwiftPackageReference "image-picker-module" */,
 			);
 			productRefGroup = 490F33C929C83FBF00B99CDA /* Products */;
 			projectDirPath = "";
@@ -203,9 +210,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				492D2CF029C9640900CA9CB7 /* dataBuddy.csv in Resources */,
 				490F33D329C83FC000B99CDA /* Preview Assets.xcassets in Resources */,
 				490F33D029C83FC000B99CDA /* Assets.xcassets in Resources */,
+				494D8FCA29D0531600AF9603 /* DataBuddy.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +237,7 @@
 				494D8F8529CE036400AF9603 /* AppDelegate.swift in Sources */,
 				490F33CC29C83FBF00B99CDA /* A_BuddyApp.swift in Sources */,
 				492D2D0429CC220E00CA9CB7 /* BuddyPreview.swift in Sources */,
+				494D8FCF29D0B7C000AF9603 /* ImagePickerView.swift in Sources */,
 				494D8FC729D00EEE00AF9603 /* MyQRScanner.swift in Sources */,
 				494D8FC329CF52FE00AF9603 /* MyQRGenerator.swift in Sources */,
 				49B596CF29CD5FF500F1FF4C /* PopupForm.swift in Sources */,
@@ -451,6 +459,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		494D8FCB29D0B78700AF9603 /* XCRemoteSwiftPackageReference "image-picker-module" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftui-packages/image-picker-module.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -458,6 +474,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 494D8FBD29CF4F6100AF9603 /* XCRemoteSwiftPackageReference "CodeScanner" */;
 			productName = CodeScanner;
+		};
+		494D8FCC29D0B78700AF9603 /* ImagePickerModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 494D8FCB29D0B78700AF9603 /* XCRemoteSwiftPackageReference "image-picker-module" */;
+			productName = ImagePickerModule;
 		};
 /* End XCSwiftPackageProductDependency section */
 

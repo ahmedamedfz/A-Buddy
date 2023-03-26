@@ -2,6 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22D68" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Buddy" representedClassName=".Buddy" syncable="YES" codeGenerationType="class">
         <attribute name="buddyBirthday" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="buddyImagePath" optional="YES" attributeType="String"/>
         <attribute name="buddyName" optional="YES" attributeType="String"/>
         <attribute name="buddyNick" optional="YES" attributeType="String"/>
         <attribute name="buddyPhoneNumber" optional="YES" attributeType="String"/>
@@ -9,9 +10,5 @@
         <attribute name="isScanned" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="itsMe" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="photoWithBuddy" optional="YES" attributeType="Binary"/>
-    </entity>
-    <entity name="User" representedClassName="User" syncable="YES">
-        <attribute name="userName" optional="YES" attributeType="String"/>
-        <attribute name="userNick" optional="YES" attributeType="String"/>
     </entity>
 </model>

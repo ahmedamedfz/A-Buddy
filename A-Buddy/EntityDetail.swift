@@ -8,10 +8,13 @@
 
 import SwiftUI
 import CoreData
+import ImagePickerModule
 
 struct EntityDetail: View {
     
     let buddy: Buddy
+    
+    @State private var image: UIImage?
  
     var body: some View {
         ZStack() {
@@ -21,12 +24,6 @@ struct EntityDetail: View {
                 .offset(y: -120)
                 .ignoresSafeArea(.all)
             
-            Button(action: {}) {
-                Image("BackButton")
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .offset(x: -140, y: -360)
-            }
             
             VStack {
                 VStack(alignment: .leading) {
@@ -38,13 +35,7 @@ struct EntityDetail: View {
                             Text(buddy.buddyName!)
                         }
                         .listRowSeparator(.hidden)
-                        .overlay(
-                            VStack {
-                                Divider()
-                                    .frame(width: 1000, height: 1)
-                                    .offset(x: 7, y: 18)
-                            }
-                        )
+                        .overlay(VStack {Divider().frame(width: 1000, height: 1).offset(x: 7, y: 18)})
                         
                         HStack {
                             Text("Birthday")
@@ -53,12 +44,7 @@ struct EntityDetail: View {
                             Text("\(buddy.buddyBirthday ?? Date(), formatter: itemFormatter) ")
                         }
                         .listRowSeparator(.hidden)
-                        .overlay(
-                            VStack {
-                                Divider()
-                                    .frame(width: 1000, height: 1)
-                                    .offset(x: 7, y: 18)
-                            }
+                        .overlay(VStack {Divider().frame(width: 1000, height: 1).offset(x: 7, y: 18)}
                         )
                         HStack{
                             Text("Phone Number")
@@ -67,20 +53,23 @@ struct EntityDetail: View {
                             Text(buddy.buddyPhoneNumber ?? "")
                         }
                         .listRowSeparator(.hidden)
-                        .overlay(VStack{Divider()
-                        .frame(width: 1000,height: 1)
-                        .offset(x: 7, y: 18)})
+                        .overlay(VStack{Divider().frame(width: 1000,height: 1).offset(x: 7, y: 18)})
+                        HStack{
+                            Text("Together Memories")
+                                .font(.system(size: 17, design: .rounded))
+                                .bold()
+                                .padding(10)
+                            Text("Coming Soon")
+                        }
                     }
                     .scrollContentBackground(.hidden)
                     .padding(EdgeInsets(top: 100, leading: 0, bottom: 0, trailing: 0))
-                    Text("Together Memories")
-                        .font(.system(size: 17, design: .rounded))
-                        .bold()
-                        .offset(y: -300)
-                        .multilineTextAlignment(.leading)
-                        .padding(10)
-                    //QR
-                    Spacer()
+                    HStack{
+                        Text("Together Memories")
+                            .font(.system(size: 17, design: .rounded))
+                            .bold()
+                            .padding(10)
+                    }
                 }.frame(width: 395, height: 680)
                     .background(.white)
                     .cornerRadius(42)
@@ -103,6 +92,19 @@ struct EntityDetail: View {
         formatter.timeStyle = .none
         return formatter
     }()
+    func saveImageToDisk(image: UIImage, buddy : Buddy) -> URL? {
+            let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+            let fileName = buddy.id?.uuidString
+            let fileURL = documentsDirectory.appendingPathComponent(fileName ?? "")
+            guard let data = image.jpegData(compressionQuality: 1) else { return nil }
+            do {
+                try data.write(to: fileURL)
+                return fileURL
+            } catch {
+                print("Error saving image:", error)
+                return nil
+            }
+        }
 }
 
 

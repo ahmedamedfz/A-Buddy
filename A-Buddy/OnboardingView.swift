@@ -9,7 +9,9 @@ import CoreData
 
 struct OnBoardingForm: View {
     @Environment(\.managedObjectContext) private var viewContext
-    @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Buddy.buddyName, ascending: true)]) private var buddy: FetchedResults<Buddy>
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \Buddy.buddyName, ascending: true)])
+    private var buddy: FetchedResults<Buddy>
     var buddyManager = BuddyManager(persistentContainer: PersistenceController.shared.container)
     @State private var selectedUser: Buddy? = nil
     @State private var selected = "name"
@@ -19,7 +21,8 @@ struct OnBoardingForm: View {
     @State private var isNavigateToContentView = false
     
     var body: some View {
-        if isNavigateToContentView {
+        let filteredResults = buddy.filter { $0.itsMe}
+        if isNavigateToContentView || !filteredResults.isEmpty{
             ContentView()
         }else {
             VStack {
