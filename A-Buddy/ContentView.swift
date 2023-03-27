@@ -50,7 +50,7 @@ struct ContentView: View {
                             .clipShape(Circle())
                             .shadow(color: Color(red: 220/255, green: 220/255, blue: 220/255), radius: 10, x: 0, y: 3)
                     VStack{
-                        Text((theUser?.buddyName ?? ""))
+                        Text((theUser?.buddyNick ?? ""))
                             .font(.system(size: 22, design: .rounded))
                             .bold()
                         HStack{
