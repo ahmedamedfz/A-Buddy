@@ -76,7 +76,7 @@ struct OnBoardingForm: View {
                                             .font(.system(size: 17, design: .rounded))
                                             .listRowSeparator(.hidden)
                                         
-                                        TextField("Required", text: $phoneNumber)
+                                        TextField("Required", text: $phoneNumber).keyboardType(.numberPad)
                                             .font(.system(size: 17, design: .rounded))
                                         
                                     }

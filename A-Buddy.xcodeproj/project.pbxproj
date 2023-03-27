@@ -30,6 +30,8 @@
 		494D8FCA29D0531600AF9603 /* DataBuddy.csv in Resources */ = {isa = PBXBuildFile; fileRef = 494D8FC929D0531600AF9603 /* DataBuddy.csv */; };
 		494D8FCD29D0B78700AF9603 /* ImagePickerModule in Frameworks */ = {isa = PBXBuildFile; productRef = 494D8FCC29D0B78700AF9603 /* ImagePickerModule */; };
 		494D8FCF29D0B7C000AF9603 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494D8FCE29D0B7C000AF9603 /* ImagePickerView.swift */; };
+		494D8FD129D119AF00AF9603 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494D8FD029D119AF00AF9603 /* SearchBar.swift */; };
+		494D8FD329D14FE800AF9603 /* ContactPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494D8FD229D14FE800AF9603 /* ContactPicker.swift */; };
 		49B5967929CC340500F1FF4C /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5967829CC340500F1FF4C /* CustomNavBar.swift */; };
 		49B5967D29CC526200F1FF4C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5967C29CC526200F1FF4C /* OnboardingView.swift */; };
 		49B596CD29CD5D2600F1FF4C /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B596CC29CD5D2600F1FF4C /* PopupViewController.swift */; };
@@ -60,6 +62,8 @@
 		494D8FC829D010AD00AF9603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		494D8FC929D0531600AF9603 /* DataBuddy.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DataBuddy.csv; sourceTree = "<group>"; };
 		494D8FCE29D0B7C000AF9603 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		494D8FD029D119AF00AF9603 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		494D8FD229D14FE800AF9603 /* ContactPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPicker.swift; sourceTree = "<group>"; };
 		49B5967829CC340500F1FF4C /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
 		49B5967C29CC526200F1FF4C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		49B596CC29CD5D2600F1FF4C /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 		490F33BF29C83FBF00B99CDA = {
 			isa = PBXGroup;
 			children = (
+				494D8FD229D14FE800AF9603 /* ContactPicker.swift */,
 				494D8FC929D0531600AF9603 /* DataBuddy.csv */,
 				490F33CA29C83FBF00B99CDA /* A-Buddy */,
 				490F33C929C83FBF00B99CDA /* Products */,
@@ -109,6 +114,7 @@
 				492D2CFF29CC0F9800CA9CB7 /* EntityPreView.swift */,
 				492D2D0129CC1A8000CA9CB7 /* PersonalView.swift */,
 				490F33CD29C83FBF00B99CDA /* ContentView.swift */,
+				494D8FD029D119AF00AF9603 /* SearchBar.swift */,
 				49B5967C29CC526200F1FF4C /* OnboardingView.swift */,
 				490F33CF29C83FC000B99CDA /* Assets.xcassets */,
 				490F33D429C83FC000B99CDA /* Persistence.swift */,
@@ -239,6 +245,8 @@
 				492D2D0429CC220E00CA9CB7 /* BuddyPreview.swift in Sources */,
 				494D8FCF29D0B7C000AF9603 /* ImagePickerView.swift in Sources */,
 				494D8FC729D00EEE00AF9603 /* MyQRScanner.swift in Sources */,
+				494D8FD329D14FE800AF9603 /* ContactPicker.swift in Sources */,
+				494D8FD129D119AF00AF9603 /* SearchBar.swift in Sources */,
 				494D8FC329CF52FE00AF9603 /* MyQRGenerator.swift in Sources */,
 				49B596CF29CD5FF500F1FF4C /* PopupForm.swift in Sources */,
 				492D2D0029CC0F9800CA9CB7 /* EntityPreView.swift in Sources */,
@@ -378,6 +386,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "A-Buddy/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes";
+				INFOPLIST_KEY_NSContactsUsageDescription = "We need to acces your contact to save";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -409,6 +418,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "A-Buddy/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes";
+				INFOPLIST_KEY_NSContactsUsageDescription = "We need to acces your contact to save";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

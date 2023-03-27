@@ -8,14 +8,15 @@
 
 import SwiftUI
 import CoreData
-import ImagePickerModule
+import Contacts
 
 struct EntityDetail: View {
     
     let buddy: Buddy
-    
-    @State private var image: UIImage?
- 
+    let contact = CNMutableContact()
+    private let bluePrimaryColor = Color(red: 49/255, green: 175/255, blue: 171/255)
+    private let redSecondaryColor = Color(red: 255/255, green: 143/255, blue: 145/255)
+    private let yellowComplementaryColor = Color(red: 254/255, green: 219/255, blue: 165/255)
     var body: some View {
         ZStack() {
             Image("Header")
@@ -64,12 +65,6 @@ struct EntityDetail: View {
                     }
                     .scrollContentBackground(.hidden)
                     .padding(EdgeInsets(top: 100, leading: 0, bottom: 0, trailing: 0))
-                    HStack{
-                        Text("Together Memories")
-                            .font(.system(size: 17, design: .rounded))
-                            .bold()
-                            .padding(10)
-                    }
                 }.frame(width: 395, height: 680)
                     .background(.white)
                     .cornerRadius(42)
@@ -82,6 +77,29 @@ struct EntityDetail: View {
                         .font(.system(size: 22, design: .rounded))
                         .bold()
                         .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
+                    Button("+ Add to Contacts") {
+                        // Create a mutable object to add to the contact.
+                        // Mutable object means an object state that can be modified after created.
+                        let contact = CNMutableContact()
+                        // Name
+                        contact.givenName = buddy.buddyName ?? ""
+                        // Phone No.
+                        contact.phoneNumbers = [CNLabeledValue(label: CNLabelPhoneNumberiPhone, value: CNPhoneNumber(stringValue: buddy.buddyPhoneNumber ?? ""))]
+                        // Save the created contact.
+                        let store = CNContactStore()
+                        let saveRequest = CNSaveRequest()
+                        saveRequest.add(contact, toContainerWithIdentifier: nil)
+                        do {
+                            try store.execute(saveRequest)
+                        } catch {
+                            print("Error occur: \(error)")
+                            // Handle error
+                            // may add a alert...
+                        }
+                    }
+                    .buttonStyle(.borderless)
+                    .foregroundColor(bluePrimaryColor)
+                    .background(Color.white)
                 }.offset(y: -540)
             }
         }
@@ -92,19 +110,6 @@ struct EntityDetail: View {
         formatter.timeStyle = .none
         return formatter
     }()
-    func saveImageToDisk(image: UIImage, buddy : Buddy) -> URL? {
-            let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-            let fileName = buddy.id?.uuidString
-            let fileURL = documentsDirectory.appendingPathComponent(fileName ?? "")
-            guard let data = image.jpegData(compressionQuality: 1) else { return nil }
-            do {
-                try data.write(to: fileURL)
-                return fileURL
-            } catch {
-                print("Error saving image:", error)
-                return nil
-            }
-        }
 }
 
 

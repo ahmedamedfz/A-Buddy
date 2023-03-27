@@ -16,6 +16,8 @@ struct ContentView: View {
     private var entity: FetchedResults<Buddy>
     private let bluePrimaryColor = Color(red: 49/255, green: 175/255, blue: 171/255)
     private let redSecondaryColor = Color(red: 255/255, green: 143/255, blue: 145/255)
+    private let yellowComplementaryColor = Color(red: 254/255, green: 219/255, blue: 165/255)
+    @State private var searchText = ""
     
     var body: some View {
         let filteredResultsMe = users.filter { $0.itsMe}
@@ -24,11 +26,13 @@ struct ContentView: View {
         let scannedCount = scannedOnly.count
         NavigationView {
             ZStack {
-                Color(red: 254/255, green: 219/255, blue: 165/255).edgesIgnoringSafeArea(.all)
+                yellowComplementaryColor.edgesIgnoringSafeArea(.all)
                 Image("Header").resizable().offset(y:-200).edgesIgnoringSafeArea(.all)
                 List {
                     Text("Friend List").font(.system(size: 22, design: .rounded)).bold()
-                    ForEach(entity){
+                    SearchBar(text: $searchText)
+                    Divider()
+                    ForEach(entity.filter { searchText.isEmpty || $0.buddyName!.localizedStandardContains(searchText)}){
                         entity in NavigationLink{
                             PersonalView(tappedBuddy: entity)
                         } label: {

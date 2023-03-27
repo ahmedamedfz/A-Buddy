@@ -24,7 +24,9 @@ struct MyQRScanner : View {
                 let lines = string.split(separator: "\n")
 //                let birthdate = lines[2]
 //                let birthday = dateFormatter.date(from:String(birthdate))
-                buddyManager.updateBuddy(buddy: buddy, newName: String(lines[1]), newBirthday: dateFormatter.date(from: String(lines[2])) ?? Date.now, newPhoneNumber: String(lines[3]), itsScanned: true)
+                if String(lines[0]) == buddy.buddyName {
+                    buddyManager.updateBuddy(buddy: buddy, newName: String(lines[1]), newBirthday: dateFormatter.date(from: String(lines[2])) ?? Date.now, newPhoneNumber: String(lines[3]), itsScanned: true)
+                }
                 presentationMode.wrappedValue.dismiss()
             case .failure(let error):
                 print(error.localizedDescription)
